@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.MuiButton-root {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+}
+
+
+button:hover, .MuiButton-root:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px; 
+  margin: 70px 24%;
+}
+
+input, .MuiTextField-root {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+input:focus, .MuiTextField-root:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+input::placeholder, .MuiTextField-root .MuiInputBase-input::placeholder {
+  color: #888;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+td button {
+  margin: 5px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+td button:nth-child(1) {
+  background-color: #28a745;
+  color: white;
+}
+
+td button:nth-child(2) {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 10px;
+}
+
+td button:hover {
+  opacity: 0.8;
+}
+
+.app-bar {
+  position: relative;
+  background-color: #1976d2; 
+  box-shadow: none; 
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.toolbar-icon {
+  margin-right: 16px;
+  font-size: 1.5rem;
+}
+
+.toolbar-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  body {
+      padding: 10px;
+  }
+  
+  .container {
+      padding: 10px;
+  }
+
+  .form-container {
+    .form-container {
+      margin: 20px auto; 
+      padding: 15px;
+    }
+  }
+
+  input, .MuiTextField-root {
+      font-size: 16px;
+  }
+
+  table {
+      font-size: 12px;
+  }
+
+  th, td {
+      padding: 8px;
+  }
+
+  td button {
+      font-size: 10px;
+      padding: 4px 8px;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  
+  .form-container {
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+    max-width: 90%; 
+    margin: 50px auto; 
+  }
+
+  button {
+    grid-column: 1;
+    width: 100%; 
+  }
+}
+
+  table {
+      font-size: 13px;
+  }
+
+  td button {
+      font-size: 11px;
+      padding: 5px 10px;
+  }
+
+  .toolbar {
+    padding: 0 8px;
+  }
+
+  .toolbar-icon {
+    font-size: 1.2rem;
+  }
+
+  .toolbar-title {
+    font-size: 1rem;
+  }
+
+  .btn{
+    margin-left: -90px;
+  }
+
